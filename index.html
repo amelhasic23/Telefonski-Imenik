@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Imenik</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Telefonski Imenik</h1>
+        <contact-form @new-contact="dodajKontakt"></contact-form>
+        <contact-list :contacts="imenik" @delete-contact="obrisiKontakt"></contact-list>
+    </div>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="index.js"></script>
+</body>
+</html>
